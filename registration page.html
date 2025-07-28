@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tickit - Register</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f8;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+      animation: fadeInBody 3s ease;
+    }
+
+    @keyframes fadeInBody {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      color: #0a66c2;
+      margin-bottom: 10px;
+      animation: slideDown 1s ease-out;
+    }
+
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    #theme {
+      font-style: italic;
+      color: #555;
+      margin-bottom: 30px;
+      animation: fadeIn 1.2s ease forwards;
+      animation-delay: 0.4s;
+      opacity: 0;
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    section {
+      background-color: #fff;
+      padding: 30px;
+      margin: auto;
+      max-width: 450px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      animation: scaleIn 0.7s ease-out forwards;
+      animation-delay: 0.6s;
+      opacity: 0;
+    }
+
+    @keyframes scaleIn {
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    section h2 {
+      color: #0a66c2;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      animation: fadeInForm 1s ease forwards;
+      animation-delay: 0.8s;
+      opacity: 0;
+    }
+
+    @keyframes fadeInForm {
+      to { opacity: 1; }
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+      transition: box-shadow 0.3s ease, border-color 0.3s ease;
+    }
+
+    input:focus {
+      border-color: #0a66c2;
+      box-shadow: 0 0 6px rgba(10, 102, 194, 0.3);
+      outline: none;
+    }
+
+    button[type="submit"] {
+      padding: 10px;
+      background-color: #0a66c2;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #084a9c;
+      transform: scale(1.02);
+    }
+
+    .link {
+      font-size: 0.9em;
+      color: #0a66c2;
+      text-decoration: none;
+      margin-top: 5px;
+    }
+
+    .link:hover {
+      text-decoration: underline;
+      color: #083e7e;
+    }
+  </style>
+</head>
+<body>
+  <h1>Tickit Registration</h1>
+  <p id="theme">Join the support community today</p>
+
+  <section>
+    <h2>Create an Account</h2>
+    <form action="/register" method="POST">
+      <input type="text" name="username" placeholder="Username" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <input type="password" name="password" placeholder="Password" required />
+      <input type="password" name="confirmPassword" placeholder="Confirm Password" required />
+      <button type="submit">Register</button>
+    </form>
+    <p><a class="link" href="index.html">Already have an account? Login here</a></p>
+  </section>
+</body>
+</html>

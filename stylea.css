@@ -1,0 +1,40 @@
+body{
+    background-color: white;
+    color: darkslategray;
+    text-align: center;
+
+}
+h2{
+    font-size: 24px;
+    color: red;
+    margin-left: 0%;
+    padding-left: 0%;
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+
+
+h3{
+    font-size: 20px;
+    color: darkblue;
+    margin-left: 0%;
+    padding-left: 0%;
+    border-radius: 10px;
+}
+p{
+    font-size: 16px;
+    color: black;
+    margin-left: 0%;
+    padding-left: 0%;
+    border-radius: 5px;
+}
+a{
+    font-size: 18px;
+    color: darkgreen;
+    text-decoration: none;
+}
+a:hover{
+    color: green;
+    text-decoration: underline;
+}

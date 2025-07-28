@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tickit</title>
+  
+</head>
+<style>
+  /* General body styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  animation: fadeInBody 3s ease;
+}
+
+/* Animate body on load */
+@keyframes fadeInBody {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Main heading */
+h1 {
+  color: #0a66c2;
+  margin-bottom: 10px;
+  animation: slideDown 1s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Theme text */
+#theme {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 30px;
+  animation: fadeIn 1.2s ease forwards;
+  animation-delay: 0.4s;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Login section styling */
+section {
+  background-color: #fff;
+  padding: 30px;
+  margin: auto;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  animation: scaleIn 0.7s ease-out forwards;
+  animation-delay: 0.6s;
+  opacity: 0;
+}
+
+@keyframes scaleIn {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Section heading */
+section h2 {
+  color: #0a66c2;
+  margin-bottom: 20px;
+}
+
+/* Image styling */
+section img {
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  transition: transform 0.4s ease;
+}
+
+section img:hover {
+  transform: scale(1.03);
+}
+
+/* Form layout */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  animation: fadeInForm 1s ease forwards;
+  animation-delay: 0.8s;
+  opacity: 0;
+}
+
+@keyframes fadeInForm {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Input fields */
+input[type="text"],
+input[type="password"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #0a66c2;
+  box-shadow: 0 0 6px rgba(10, 102, 194, 0.3);
+  outline: none;
+}
+
+/* Submit button */
+button[type="submit"] {
+  padding: 10px;
+  background-color: #0a66c2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #084a9c;
+  transform: scale(1.02);
+}
+
+/* Links below form */
+form a {
+  font-size: 0.9em;
+  color: #0a66c2;
+  text-decoration: none;
+  margin-top: 5px;
+  transition: color 0.3s ease;
+}
+
+form a:hover {
+  text-decoration: underline;
+  color: #083e7e;
+}
+
+</style>
+<body>
+  <h1>Tickit Login</h1>
+  <p id="theme">Share your Problem | Solve with us</p>
+
+  <section>
+    <h2>Login Page</h2>
+    <img src="https://via.placeholder.com/300x150?text=Support+Image" alt="Support Image">
+
+    <form id="loginform">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" placeholder="Enter your username" required>
+      <br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      <br>
+     <form id="loginform" action="/login" method="POST">
+
+      <br>
+      <a href="forgot.html">Forgot Password?</a> |
+      <a href="http://127.0.0.1:5500/registration%20page.html">Don't have an account?</a>
+    </form>
+    <form id="loginform" action="/login" method="POST">
+
+  </section>
+</body>
+</html>
